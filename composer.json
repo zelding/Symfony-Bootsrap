@@ -1,0 +1,39 @@
+{
+  "name": "zedling/symfony-bootstrap",
+  "description": "Symfony bundle for twig and bootstrap",
+  "type": "symfony-bundle",
+  "require": {
+    "php": ">=7.1",
+    "symfony/framework-bundle": ">=3.3",
+    "twig/twig": "^2.4"
+  },
+  "require-dev": {
+    "symfony/class-loader": "2.*|~3.0",
+    "symfony/security-bundle": "2.*|~3.0"
+  },
+  "license": "GNU3",
+  "authors": [
+    {
+      "name": "zedling",
+      "email": "kristof.dekany.hu@gmail.com"
+    }
+  ],
+  "scripts": {
+    "zedling-bootstrap": [
+
+    ],
+    "post-install-cmd": [
+      "@zedling-bootstrap"
+    ],
+    "post-update-cmd": [
+      "@zedling-bootstrap"
+    ]
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Zedling\\BootstrapBundle\\": "src/"
+    }
+  }
+}

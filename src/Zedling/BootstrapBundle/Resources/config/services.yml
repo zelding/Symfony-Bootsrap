@@ -1,0 +1,4 @@
+services:
+#    zedling_bootstrap.example:
+#        class: Zedling\BootstrapBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
